@@ -1,0 +1,10 @@
+.slide {
+    width: auto;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.slider-container{
+    background-color: #aaa;
+}

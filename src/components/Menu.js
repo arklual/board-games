@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav} from "react-bootstrap";
 
 function Menu({menuComponents}) {

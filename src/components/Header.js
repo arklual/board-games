@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Header.css';
 import Menu from "./Menu";
 import {Navbar, Container, Nav} from "react-bootstrap";
 
