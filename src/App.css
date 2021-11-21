@@ -1,10 +1,26 @@
-.slide {
-    width: auto;
-    height: 300px;
-    margin: auto;
-    display: block;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+body {
+    background-color: #FBE8A6;
+    font-family: 'Oswald', sans-serif;
 }
 
-.slider-container{
-    background-color: #aaa;
+.background-primary {
+    background-color: #F4976C;
+}
+
+.slide {
+    height: 25em;
+    width: auto;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+.slider-container {
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px 5px #2f334c;
+    border-radius: 40px;
+    border-width: thick;
+    background-color: #303c6c;
 }

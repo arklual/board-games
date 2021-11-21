@@ -9,7 +9,7 @@ function ImageSlider({slides}) {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrent(c => c === (slides.length - 1) ? 0 : c + 1);
-        }, 2000);
+        }, 4000);
 
         return () => {
             clearInterval(intervalId);
@@ -18,8 +18,8 @@ function ImageSlider({slides}) {
 
 
     return (
-        <Container fluid className="slider-container">
-            <Image className="slide" src={slides[current].image} fluid rounded/>
+        <Container className="slider-container">
+            <Image className="slide" src={slides[current].image} fluid/>
         </Container>
     );
 }

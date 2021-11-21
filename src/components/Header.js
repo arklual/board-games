@@ -4,7 +4,7 @@ import {Navbar, Container, Nav} from "react-bootstrap";
 function Header({title, menuComponents}) {
 
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className="background-primary" expand="lg">
             <Container>
                 <Navbar.Brand href="#home">{title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
