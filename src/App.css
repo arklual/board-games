@@ -10,14 +10,23 @@ body {
 }
 
 .slide {
-    height: 25em;
+    height: 80vh;
     width: auto;
+    object-fit: cover;
     margin: auto;
     display: block;
     border-radius: 30px;
 }
 
+@media (max-width: 900px) {
+    .slide {
+        width: auto;
+        height: 40vh;
+    }
+}
+
 .slider-container {
+    width: 100%;
     margin-top: 15px;
     box-shadow: 1px 1px 5px 5px #2f334c;
     border-radius: 40px;
