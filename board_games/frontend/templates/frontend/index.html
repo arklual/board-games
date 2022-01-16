@@ -9,7 +9,10 @@
 <div id="root">
     <!-- React will load here -->
 </div>
-</body>
+<script type="text/javascript">
+  var games = {{gameList|safe}}
+</script>
 {% load static %}
 <script src="{% static "frontend/main.js" %}"></script>
+</body>
 </html>

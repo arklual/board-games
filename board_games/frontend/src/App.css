@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap");
 * {
   text-decoration: none;
-  color: #666;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
@@ -11,21 +11,24 @@ body {
 }
 a {
   text-decoration: none;
-  color: #666;
+  color: #fff;
+}
+a:hover{
+  color: rgb(255, 112, 112);
 }
 ul {
   list-style-type: none;
 }
 li {
   text-decoration: none;
-  color: #666;
+  color: #fff;
 }
 body {
   background-color: #fbe8a6 !important;
   font-family: "Oswald", sans-serif;
 }
 .background-primary {
-  background-color: #f4976c;
+  background-color: #2F2FA2;
 }
 
 .slide {
@@ -49,7 +52,7 @@ body {
   position: absolute;
   top: 56px;
   right: 0;
-  background-color: #f4976c;
+  background-color: #2F2FA2;
 }
 @media (max-width: 1500px) {
   .my-sidebar {
@@ -73,5 +76,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
   color: #fff;
 }

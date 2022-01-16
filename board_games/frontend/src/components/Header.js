@@ -5,7 +5,7 @@ import React from "react";
 function Header({title, menuComponents}) {
 
     return (
-        <Navbar className="background-primary" expand="lg">
+        <Navbar className="background-primary navbar-dark" expand="lg">
             <Container>
                 <Navbar.Brand href="/">{title}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>

@@ -7,9 +7,9 @@ function Sidebar(props) {
             <Container>
                 <h4>Best Games(<a href="https://boardgamegeek.com/">BGG</a> top):</h4>
                 <ul>
-                    <li><a href="#">Agricola</a></li>
-                    <li><a href="#">Arkham Horror: The card game</a></li>
-                    <li><a href="#">Ticket to ride</a></li>
+                    {games.map(game => (
+                        <li><a href={game[1]}>{game[0]}</a></li>
+                    ))}
                 </ul>
             </Container>
         </div>
