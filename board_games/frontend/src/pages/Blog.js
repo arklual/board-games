@@ -22,10 +22,14 @@ export default class Blog extends Component {
       });
   }
   render() {
-    return(
+    return (
       <>
-      {this.state.articleList.map(item => <li key={item.id}><a href={"/blog/" + item.id}>{item.title}</a></li>)}
+        {this.state.articleList.map((item) => (
+          <li key={item.id}>
+            <a href={"/blog/" + item.id}>{item.title}</a>
+          </li>
+        ))}
       </>
-    )
+    );
   }
 }

@@ -25,3 +25,6 @@ def signup(request):
     return render(request, 'frontend/index.html')
 def blog(request):
     return render(request, 'frontend/index.html')
+def article(request, id):
+    context = {'id': id}
+    return render(request, 'frontend/index.html', context)

@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
-a:hover{
+a:hover {
   color: rgb(255, 112, 112);
 }
 ul {
@@ -24,11 +24,11 @@ li {
   color: #fff;
 }
 body {
-  background-color: #fbe8a6 !important;
+  background-color: #6392da !important;
   font-family: "Oswald", sans-serif;
 }
 .background-primary {
-  background-color: #2F2FA2;
+  background-color: #2f2fa2;
 }
 
 .slide {
@@ -52,7 +52,7 @@ body {
   position: absolute;
   top: 56px;
   right: 0;
-  background-color: #2F2FA2;
+  background-color: #2f2fa2;
 }
 @media (max-width: 1500px) {
   .my-sidebar {
@@ -67,16 +67,31 @@ body {
   }
 }
 .footer {
-  height: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
 }
 .wrapper {
-  min-height: 80vh;
+  min-height: 87.7vh;
 }
 .signup {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  display: block;
+  border: 3px solid #ffffff;
+  padding: 30px;
+  margin-top: 20vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
   color: #fff;
+}
+@media (max-width: 600px) {
+  .signup {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border: 2px solid #ffffff;
+  }
 }
 .navbar-light .navbar-nav .nav-link {
   color: #fff;

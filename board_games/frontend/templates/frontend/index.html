@@ -10,7 +10,7 @@
     <!-- React will load here -->
 </div>
 <script type="text/javascript">
-  var games = {{gameList|safe}}
+  const games = {{gameList|safe}}
 </script>
 {% load static %}
 <script src="{% static "frontend/main.js" %}"></script>
