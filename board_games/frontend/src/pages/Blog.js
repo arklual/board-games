@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import { Container } from "react-bootstrap";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -23,13 +24,15 @@ export default class Blog extends Component {
   }
   render() {
     return (
-      <>
-        {this.state.articleList.map((item) => (
-          <li key={item.id}>
-            <a href={"/blog/" + item.id}>{item.title}</a>
-          </li>
-        ))}
-      </>
+      <Container>
+        <ul>
+          {this.state.articleList.map((item) => (
+            <li key={item.id}>
+              <a href={"/blog/" + item.id}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      </Container>
     );
   }
 }

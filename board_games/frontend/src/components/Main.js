@@ -8,7 +8,7 @@ import Article from '../pages/Article';
 
 const Main = () => {
     return (
-        <div className="wrapper">
+        <div>
             <Routes>
                 <Route exact path='/' element={<Home/>}/>
                 <Route exact path='/blog' element={<Blog/>}/>

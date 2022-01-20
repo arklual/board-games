@@ -8,20 +8,20 @@ const Main = () => {
         <div>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">Главная</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#">Статьи</a>
             </li>
             <li>
-              <a href="#">Forum</a>
+              <a href="#">Форум</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#">О нас</a>
             </li>
           </ul>
+          <bold>Все права защищены 2021</bold>
         </div>
-        <bold>Copyright 2021</bold>
       </Container>
     </footer>
   );

@@ -9,26 +9,26 @@ function App() {
 
     const menuComponents = [
         {
-            text: "Home",
+            text: "Главная",
             link: "/"
         },
         {
-            text: "Blog",
+            text: "Статьи",
             link: "/blog"
         },
         {
-            text: "Forum",
+            text: "Форум",
             link: "/forum"
         },
         {
-            text: "About",
+            text: "О нас",
             link: "/about"
         },
     ]
 
     return (
         <div className="App">
-            <Header title="BoardGames" menuComponents={menuComponents}/>
+            <Header title="Поиграем!" menuComponents={menuComponents}/>
             <Main/>
             <Footer/>
         </div>
