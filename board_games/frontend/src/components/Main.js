@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from '../pages/Home';
 import Signup from '../pages/Signup';
 import Blog from '../pages/Blog';
+import Forum from '../pages/Forum';
 import Article from '../pages/Article';
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
                 <Route exact path='/' element={<Home/>}/>
                 <Route exact path='/blog' element={<Blog/>}/>
                 <Route exact path='/blog/:id' element={<Article/>}/>
+                <Route exact path='/forum' element={<Forum />}/>
                 <Route exact path='/signup' element={<Signup />}/>
             </Routes>
         </div>

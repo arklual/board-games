@@ -47,3 +47,6 @@ def blog(request):
 def article(request, id):
     context = {'id': id}
     return render(request, 'frontend/index.html', context)
+
+def forum(request):
+    return render(request, 'frontend/index.html')
