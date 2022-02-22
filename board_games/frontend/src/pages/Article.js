@@ -27,8 +27,6 @@ class Article extends Component {
       });
   }
   render() {
-    console.log(this.state.articleList);
-    console.log(this.state.article);
     return (
       <Container>
         <h2>{this.state.article.title}</h2>
