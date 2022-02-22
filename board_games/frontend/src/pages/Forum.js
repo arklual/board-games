@@ -3,15 +3,31 @@ import { render } from "react-dom";
 import { Container } from "react-bootstrap";
 
 export default class Forum extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      topicList: [],
+    };
+  }
+  componentDidMount() {
+    fetch("api/topics")
+      .then((response) => {
+        return response.json();
+      })
+      .then((topicList) => {
+        this.setState(() => {
+          return {
+            topicList,
+          };
+        });
+      });
+  }
   render() {
-    let a = []
-    for (let i = 0; i < 10; i++){
-      a[i] = i
-    }
     return (
       <Container>
-        {a.map(item => (
-          <a key={item}>{item}</a>
+        <h1>Темы:</h1>
+        {this.state.topicList.map(topic => (
+          <a href={'/forum/topic/'+topic.id} key={topic.id}>{topic.title}<br/></a>
         ))}
       </Container>
     );
