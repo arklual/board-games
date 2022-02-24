@@ -111,3 +111,6 @@ p{
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
 }
+.navbar-dark .navbar-nav .nav-link.no-hover:hover {
+  color: #fff;
+}

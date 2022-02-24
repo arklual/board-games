@@ -1,16 +1,43 @@
+from django.http import JsonResponse
 from django.shortcuts import redirect
 from .models import Account
 from .serializers import AccountSerializer
 from rest_framework import viewsets
 from frontend.views import index
+from django.contrib import auth
+
 
 class AccountView(viewsets.ModelViewSet):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
-    
+
+
 def create_user(request):
     username = request.POST['username']
     email = request.POST['email']
     password = request.POST['password']
-    user = Account.objects.create_user(email, username, password)
+    Account.objects.create_user(email, username, password)
+    return redirect(index)
+
+
+def sign_in(request):
+    email = request.POST['email']
+    password = request.POST['password']
+    user = auth.authenticate(request, username=email, password=password)
+    if user is not None:
+        auth.login(request, user)
+    return redirect(index)
+
+
+def current_user(request):
+    if not request.user.is_authenticated:
+        return JsonResponse({'username': False})
+    user = request.user
+    data = {}
+    return JsonResponse({
+        'username': user.username
+    })
+
+def logout(request):
+    auth.logout(request)
     return redirect(index)
