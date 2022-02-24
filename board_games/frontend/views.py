@@ -50,3 +50,6 @@ def article(request, id):
 
 def forum(request):
     return render(request, 'frontend/index.html')
+
+def topic(request, id):
+    return render(request, 'frontend/index.html')

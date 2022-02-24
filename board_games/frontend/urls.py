@@ -9,4 +9,5 @@ urlpatterns = [
     path('blog', views.blog ),
     path('blog/<int:id>', views.article ),
     path('forum', views.forum ),
+    path('forum/topic/<int:id>', views.topic ),
 ]

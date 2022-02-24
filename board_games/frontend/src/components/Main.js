@@ -6,6 +6,7 @@ import Signup from '../pages/Signup';
 import Blog from '../pages/Blog';
 import Forum from '../pages/Forum';
 import Article from '../pages/Article';
+import Topic from '../pages/Topic'
 
 const Main = () => {
     return (
@@ -15,6 +16,7 @@ const Main = () => {
                 <Route exact path='/blog' element={<Blog/>}/>
                 <Route exact path='/blog/:id' element={<Article/>}/>
                 <Route exact path='/forum' element={<Forum />}/>
+                <Route exact path='/forum/topic/:id' element={<Topic />}/>
                 <Route exact path='/signup' element={<Signup />}/>
             </Routes>
         </div>

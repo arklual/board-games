@@ -10,7 +10,7 @@ export default class Forum extends Component {
     };
   }
   componentDidMount() {
-    fetch("api/topics")
+    fetch("api/forum")
       .then((response) => {
         return response.json();
       })
