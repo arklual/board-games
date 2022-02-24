@@ -5,7 +5,7 @@ function Sidebar(props) {
     return (
         <div className="my-sidebar">
             <Container>
-                <h4>Best Games(<a href="https://boardgamegeek.com/">BGG</a> top):</h4>
+                <h4>Лучшие игры(по версии <a href="https://boardgamegeek.com/">BGG</a>):</h4>
                 <ul>
                     {games.map(game => (
                         <li><a href={game[1]}>{game[0]}</a></li>
