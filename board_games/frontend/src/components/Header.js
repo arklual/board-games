@@ -28,7 +28,7 @@ export default class Header extends Component {
     };
   }
   componentDidMount() {
-    fetch("api/current_user")
+    fetch("/api/current_user")
       .then((response) => {
         return response.json();
       })

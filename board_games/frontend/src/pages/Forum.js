@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 function CreateTopicForm({isVisible}){
   if (isVisible){
     return(
-      <form action="/api/create-topic/">
+      <form action="/api/create-topic/" method="GET">
         <label>Название темы:</label>
         <input style={{color: "black"}} type="text" name="title" placeholder=""></input>
         <input onClick={isVisible=false} type="submit" className="btn btn-primary"></input>
