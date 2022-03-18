@@ -42,7 +42,7 @@ export default class Header extends Component {
   }
   render() {
     return (
-      <Navbar className="background-primary navbar-dark" expand="lg">
+      <Navbar className="background-primary navbar-dark fixed-top" expand="lg">
         <Container>
           <Navbar.Brand className="nav-title" href="/">
             {this.props.title}

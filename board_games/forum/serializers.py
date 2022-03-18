@@ -9,4 +9,4 @@ class ForumSerializer(serializers.ModelSerializer):
 class MessagesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message
-        fields = ('id', 'title', 'text', 'topic')
+        fields = ('id', 'text', 'topic', 'user')

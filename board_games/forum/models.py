@@ -11,5 +11,4 @@ class Topic(models.Model):
 class Message(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     user = models.ForeignKey(Account, on_delete=models.CASCADE, null=True)
-    title = models.CharField(max_length=255)
     text = models.TextField()

@@ -8,23 +8,20 @@ function Signin() {
       <Form method="post" action="/api/signin/">
         <CSRFToken />
         <Form.Group className="mb-3" controlId="email">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control name="email" type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+          <Form.Label>Адрес Email</Form.Label>
+          <Form.Control name="email" type="email" placeholder="Введите email" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Пароль</Form.Label>
           <Form.Control
             name="password"
             type="password"
-            placeholder="Password"
+            placeholder="Пароль"
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Войти
         </Button>
       </Form>
     </div>

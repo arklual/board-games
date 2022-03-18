@@ -19,9 +19,8 @@ def create_topic(request):
     return redirect(forum)
 
 def create_message(request, topic_id):
-    title_of_message = request.POST['title']
     message = request.POST['message']
     topic = get_object_or_404(Topic, id=topic_id)
-    new_message = Message(title=title_of_message, user=request.user, text=message, topic=topic)
+    new_message = Message(user=request.user, text=message, topic=topic)
     new_message.save()
     return redirect(topic_view, topic_id)

@@ -8,35 +8,29 @@ function Signup() {
       <Form method="post" action="/api/signup/">
         <CSRFToken />
         <Form.Group className="mb-3" controlId="email">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control name="email" type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+          <Form.Label>Адрес Email</Form.Label>
+          <Form.Control name="email" type="email" placeholder="Введите email" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="username">
-          <Form.Label>Username</Form.Label>
+          <Form.Label>Имя пользователя</Form.Label>
           <Form.Control
             name="username"
             type="text"
-            placeholder="Enter username"
+            placeholder="Введите имя пользователя"
           />
-          <Form.Text className="text-muted">
-            We'll never share your username with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Пароль</Form.Label>
           <Form.Control
             name="password"
             type="password"
-            placeholder="Password"
+            placeholder="Пароль"
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Зарегистрироваться
         </Button>
       </Form>
     </div>
