@@ -57,7 +57,7 @@ p{
   height: 70vh;
   width: auto;
   position: absolute;
-  top: 56px;
+  top: 66px;
   right: 0;
   background-color: #2f2fa2;
 }
@@ -67,7 +67,7 @@ p{
     border-radius: 10px;
     border: 1px solid #303c6c;
     display: block;
-    top: 0;
+    top: 70px;
     margin: 10px;
     padding: 5px;
     height: auto;

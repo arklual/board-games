@@ -29,6 +29,9 @@ class Article extends Component {
   render() {
     return (
       <Container>
+        <br></br>
+        <br></br>
+        <br></br>
         <h2>{this.state.article.title}</h2>
         <p>{this.state.article.text}</p>
         <br></br>

@@ -25,6 +25,9 @@ export default class Blog extends Component {
   render() {
     return (
       <Container>
+        <br></br>
+        <br></br>
+        <br></br>
         <ul>
           {this.state.articleList.map((item) => (
             <li key={item.id}>

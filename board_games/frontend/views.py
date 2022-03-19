@@ -53,3 +53,6 @@ def forum(request):
 
 def topic(request, id):
     return render(request, 'frontend/index.html')
+
+def about(request):
+    return render(request, 'frontend/index.html')

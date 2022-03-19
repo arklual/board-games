@@ -8,6 +8,7 @@ import Blog from '../pages/Blog';
 import Forum from '../pages/Forum';
 import Article from '../pages/Article';
 import Topic from '../pages/Topic'
+import AboutUs from '../pages/AboutUs';
 
 const Main = () => {
     return (
@@ -20,6 +21,7 @@ const Main = () => {
                 <Route exact path='/forum/topic/:id' element={<Topic />}/>
                 <Route exact path='/signup' element={<Signup />}/>
                 <Route exact path='/signin' element={<Signin />}/>
+                <Route exact path='/about' element={<AboutUs />}/>
             </Routes>
         </div>
     );
