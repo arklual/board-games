@@ -17,11 +17,8 @@ function getCookie(name) {
 var csrftoken = getCookie('csrftoken');
 
 const CSRFToken = () => {
-    /*return (
+    return (
         <input type="hidden" name="csrfmiddlewaretoken" value={csrftoken} />
-    );*/
-    return(
-        <input type="hidden" name="csrfmiddlewaretoken" value="pHK2CZzBB323BM2Nq7DE2sxnQoBG1jPl" disabled=""></input>
     );
 };
 export default CSRFToken;
