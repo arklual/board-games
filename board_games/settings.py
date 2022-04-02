@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['boardgames-school.herokuapp.com']
 CSRF_TRUSTED_ORIGINS = [
-    'https://boardgames-school.herokuapp.com'
+    'boardgames-school.herokuapp.com'
 ]
 
 
