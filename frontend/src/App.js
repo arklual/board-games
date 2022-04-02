@@ -4,11 +4,6 @@ import Header from "./components/Header";
 import React from "react";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import axios from 'axios';
-
-axios.defaults.xsrfCookieName = 'csrftoken'
-axios.defaults.xsrfHeaderName = 'X-CSRFToken'
-
 
 function App() {
 
