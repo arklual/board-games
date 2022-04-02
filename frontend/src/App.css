@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Pattaya&display=swap');
+* {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: rgb(255, 112, 112);
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  background-color: #6392da !important;
+  font-family: "Oswald", sans-serif;
+  font-size: 14pt;
+}
+.background-primary {
+  background-color: #2f2fa2;
+}
+p{
+  white-space: pre-wrap;
+  font-family: 'Bitter', serif;
+  font-size: 14pt;
+}
+.slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  margin: auto;
+  user-select: none;
+  display: block;
+}
+.my-sidebar {
+  border: 1px solid #303c6c;
+  border-radius: 10px;
+  margin: 10px;
+  height: 70vh;
+  width: auto;
+  position: absolute;
+  top: 66px;
+  right: 0;
+  background-color: #2f2fa2;
+}
+@media (max-width: 1500px) {
+  .my-sidebar {
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #303c6c;
+    display: block;
+    top: 70px;
+    margin: 10px;
+    padding: 5px;
+    height: auto;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer li{
+  margin-right: 20px;
+}
+.nav-title{
+  font-family: 'Pattaya', sans-serif;
+  font-size: 24pt;
+}
+.signup {
+  display: block;
+  border: 3px solid #ffffff;
+  padding: 30px;
+  margin-top: 20vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .signup {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border: 2px solid #ffffff;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.no-hover:hover {
+  color: #fff;
+}

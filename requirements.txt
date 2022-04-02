@@ -1,0 +1,11 @@
+beautifulsoup4
+dj-database-url==0.5.0
+Django==3.2.12
+django-ckeditor==6.2.0
+django-cors-headers==3.10.1
+django-js-asset==1.2.2
+djangorestframework==3.13.1
+gunicorn
+requests
+urllib3
+whitenoise
