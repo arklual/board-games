@@ -108,7 +108,11 @@ class Topic extends Component {
         <br></br>
         {this.state.messageList.map((message) => (
           <div key={message.id}>
-            <h3>{this.state.userList.filter((user) => user.id = message.user)[0].username}</h3>
+            <h3>{this.state.userList.filter((user) => user.id == message.user).map(user =>  (
+              <>
+                {user.username}
+              </>
+            ))}</h3>
             <p>{message.text}</p>
             <hr />
           </div>
