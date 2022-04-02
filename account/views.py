@@ -5,13 +5,14 @@ from .serializers import AccountSerializer
 from rest_framework import viewsets
 from frontend.views import index
 from django.contrib import auth
+from django.views.decorators.csrf import csrf_exempt
 
 
 class AccountView(viewsets.ModelViewSet):
     queryset = Account.objects.all()
     serializer_class = AccountSerializer
 
-
+@csrf_exempt
 def create_user(request):
     username = request.POST['username']
     email = request.POST['email']
@@ -19,7 +20,7 @@ def create_user(request):
     Account.objects.create_user(email, username, password)
     return redirect(index)
 
-
+@csrf_exempt
 def sign_in(request):
     email = request.POST['email']
     password = request.POST['password']
@@ -27,7 +28,6 @@ def sign_in(request):
     if user is not None:
         auth.login(request, user)
     return redirect(index)
-
 
 def current_user(request):
     if not request.user.is_authenticated:

@@ -3,6 +3,7 @@ from .models import Topic, Message
 from .serializers import ForumSerializer, MessagesSerializer
 from rest_framework import viewsets
 from frontend.views import forum, topic as topic_view
+from django.views.decorators.csrf import csrf_exempt
 
 class ForumView(viewsets.ModelViewSet):
     queryset = Topic.objects.all()
@@ -18,6 +19,7 @@ def create_topic(request):
     new_topic.save()
     return redirect(forum)
 
+@csrf_exempt
 def create_message(request, topic_id):
     message = request.POST['message']
     topic = get_object_or_404(Topic, id=topic_id)
