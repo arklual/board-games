@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fi2qu(cyc^@$ow_0)#$bb2$yx&3675df#q-afa1he*@4y#tkp-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['boardgames-school.herokuapp.com']
+ALLOWED_HOSTS = ['boardgames-school.herokuapp.com', 'localhost', '127.0.0.1']
 CSRF_TRUSTED_ORIGINS = [
     'boardgames-school.herokuapp.com'
 ]
